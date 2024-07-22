@@ -24,7 +24,7 @@ class TokenController {
     }
     catch (err) {
       return res.status(401).json({
-        errors: err.errors.map((error) => error.message)
+        errors: err.errors.map((error) => error.message),
       });
     }
   }

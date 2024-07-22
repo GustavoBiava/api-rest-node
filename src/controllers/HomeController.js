@@ -8,7 +8,7 @@ class HomeController {
       email: 'Chilli@email.com',
       idade: 29,
       peso: 66,
-      altura: 1.78
+      altura: 1.78,
     });
     res.status(200).json({ aluno });
   }
