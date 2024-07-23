@@ -15,9 +15,8 @@ class FotoController {
         return res.status(200).json(foto);
       }
       catch (e) {
-        return res.status(400).json({ errors: e.errors.map((error) => error.message) });
+        return res.status(400).json({ errors: ['O aluno não existe!'] });
       }
-
     });
   }
 }
